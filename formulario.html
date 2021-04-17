@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+        <title>Proyecto Final</title>
+  <body>
+    <h1>Tu mejor compra</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="inicio.html#">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="galeria.html">Productos</a>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="formulario.html">Formulario</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+        <div class="cabezera">
+            <b><h2>Formulario</h2></b>
+      <br></br>
+
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Primer nombre</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingresa tu primer nombre">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Segundo nombre</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingresa tu segundo nombre">
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Primer apellido</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingresa tu apellido materno">
+              </div>
+              <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Segundo apellido</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingresa tu apellido paterno">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Calle y número</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Ejemplo: Gran Campiña 125">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label">Colonia</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Ejemplo:Gran Jardín">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">Ciudad y estado</label>
+                <input type="text" class="form-control" id="León, Guanajuato" placeholder="Ejemplo:León, Guanajuato">
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">Producto que deseas comprar</label>
+                <select id="inputState" class="form-select">
+                  <option>Selecciona Producto</option>
+                  <option selected>Producto 1</option>
+                  <option selected>Producto 2</option>
+                  <option selected>Producto 3</option>
+                  <option selected>Producto 4</option>
+                  <option selected>Producto 5</option>
+                  <option selected>Producto 6</option>
+                  <option selected>Producto 7</option>
+                  <option selected>Producto 8</option>
+                  <option selected>Producto 9</option>
+                  <option selected>Producto 10</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Check me out
+                  </label>
+                </div>
+                <form class="row gy-2 gx-3 align-items-center">
+                  <div class="col-auto">
+                    <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Ejemplo: yibarra392">
+                      <div class="input-group-text">@</div>
+                  <div class="col-auto">
+                    <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                    <select class="form-select" id="autoSizingSelect">
+                      <option selected>Elige</option>
+                      <option value="1">hotmail.com</option>
+                      <option value="2">gmail.com</option>
+                      <option value="3">yahoo.com</option>
+                      <option value="4">live.com.mx</option>
+                    </select>
+                  </div>
+                </div>
+                  <div class="col-auto">
+                    <button onclick="Alerta()" type="submit" class="btn btn-primary"a class="nav-link active" aria-current="page" href="formulario.html">Enviar</button>
+                    <script>
+                      function Alerta(){
+                        alert("La información fue guardada y envada con éxito")
+                      }
+                    </script>
+                  </div>
+                </form>
+<style>
+            .cabezera{
+            display: flex;
+            height: 50px;
+            background-color: silver;
+            box-shadow:2px 2px 2px pink;
+            margin: 10px;
+            }
+            .cuerpo{
+            margin: 10px;
+            display: flex;
+            }
+            h1{
+                text-align: center;
+                color: firebrick;
+                font-weight: 900;
+            }
+            h2{
+                text-align:center;
+                color: mediumvioletred;
+            }
+            h5{
+                color: purple;
+            }
+            body{
+                background-image: url("fondo.jpg");
+            }
+            .select{
+                text-align: center;
+            }
+            label{
+              color: purple;
+              font: oblique bold 120% cursive;
+            }
+</style>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" ></script>
+  </body>
+</html>
